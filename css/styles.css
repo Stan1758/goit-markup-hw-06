@@ -1062,7 +1062,6 @@ address {
   display: block;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
   letter-spacing: 0.04em;
   color: var(--light-slate);
   margin-bottom: 4px;
@@ -1111,7 +1110,6 @@ address {
 }
 
 .modal-label-accept {
-  display: inline-block;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -1120,10 +1118,16 @@ address {
   cursor: pointer;
 }
 
+.modal-label-accept:last-child {
+  display: flex;
+  align-items: center;
+}
+
 .custom-checkbox {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   height: 16px;
   width: 16px;
   border-radius: 2px;
@@ -1144,7 +1148,6 @@ input[type="checkbox"]:checked + .modal-label-accept > .custom-checkbox {
 .privacy-link {
   line-height: 1.3;
   text-decoration: underline;
-  text-decoration-skip-ink: none;
   color: var(--iris);
 }
 
